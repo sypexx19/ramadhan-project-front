@@ -59,7 +59,7 @@ const modalStyle = {
   e.preventDefault(); // 🔥 لازم أول سطر
 
   try {
-    const response = await fetch("http://localhost:5000/api/users", {
+    const response = await fetch("https://wonderful-integrity-production.up.railway.app/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
