@@ -34,7 +34,7 @@ const Show = () => {
 }, []);
 const handleDelete = async (id) => {
   try {
-    await fetch(`http://localhost:5000/api/users/${id}`, {
+    await fetch(`https://wonderful-integrity-production.up.railway.app/users/${id}`, {
       method: "DELETE",
     });
 
