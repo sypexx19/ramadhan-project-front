@@ -18,7 +18,7 @@ const Show = () => {
 };
 
  useEffect(() => {
-  fetch('https://wonderful-integrity-production.up.railway.app/users')
+  fetch(`${import.meta.env.VITE_API_URL}/users`)
     .then(res => res.json())
     .then(data => {
       console.log('API RESPONSE:', data);
